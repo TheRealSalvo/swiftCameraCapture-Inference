@@ -58,8 +58,7 @@ class FrameHandler: NSObject, ObservableObject {
         
         videoOutput.setSampleBufferDelegate(self, queue: DispatchQueue (label: "sampleBufferQueue"))
         captureSession.addOutput(videoOutput)
-        videoOutput.connection(with:.video)?.videoOrientation = .portrait
-        //videoOutput.connection(with:.video)?.videoRotationAngle = 0.0
+        videoOutput.connection(with:.video)?.videoRotationAngle = 90.0
     }
 }
 
