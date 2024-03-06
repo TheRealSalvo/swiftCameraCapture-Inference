@@ -11,6 +11,7 @@ import Vision
 
 class FrameHandler: NSObject, ObservableObject {
     @Published var frame: CGImage?
+    
     private var permissionGranted   = false
     private let captureSession      = AVCaptureSession()
     private let sessionQueue        = DispatchQueue (label: "sessionQueue")
@@ -49,6 +50,7 @@ class FrameHandler: NSObject, ObservableObject {
         let videoOutput = AVCaptureVideoDataOutput()
         
         guard permissionGranted else { return }
+        
         guard let videoDevice = AVCaptureDevice.default(.builtInDualWideCamera,for: .video, position: .back) else { return }
         guard let videoDeviceInput = try? AVCaptureDeviceInput (device: videoDevice) else { return}
         guard captureSession.canAddInput (videoDeviceInput) else { return}
