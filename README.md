@@ -40,7 +40,7 @@ captureSession.addOutput(videoOutput)
 videoOutput.connection(with:.video)?.videoOrientation = .portrait
 ```
 
-### 2- Start the capture session
+### 3- Start the capture session
 ```
 captureSession.startRunning()
 ```
