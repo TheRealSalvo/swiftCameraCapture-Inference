@@ -44,3 +44,6 @@ videoOutput.connection(with:.video)?.videoOrientation = .portrait
 ```
 captureSession.startRunning()
 ```
+
+# Acknowledgements
+[Making a Live Camera with SwiftUI and AVFoundation](https://www.youtube.com/watch?v=cLnw5z8ZGqM) by [Neuralception](https://www.youtube.com/@neuralception) on Youtube
