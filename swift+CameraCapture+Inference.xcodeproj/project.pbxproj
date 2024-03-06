@@ -11,6 +11,9 @@
 		547B51CF2B98A99200DF92CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B51CE2B98A99200DF92CA /* ContentView.swift */; };
 		547B51D12B98A99300DF92CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547B51D02B98A99300DF92CA /* Assets.xcassets */; };
 		547B51D42B98A99300DF92CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547B51D32B98A99300DF92CA /* Preview Assets.xcassets */; };
+		547B51DF2B98ABB800DF92CA /* FrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B51DE2B98ABB800DF92CA /* FrameHandler.swift */; };
+		547B51E12B98ABC500DF92CA /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B51E02B98ABC500DF92CA /* FrameView.swift */; };
+		547B51E62B98AC9F00DF92CA /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547B51E52B98AC9F00DF92CA /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,10 @@
 		547B51D02B98A99300DF92CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		547B51D32B98A99300DF92CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		547B51DA2B98AA8900DF92CA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		547B51DB2B98AB5F00DF92CA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		547B51DE2B98ABB800DF92CA /* FrameHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameHandler.swift; sourceTree = "<group>"; };
+		547B51E02B98ABC500DF92CA /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		547B51E52B98AC9F00DF92CA /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				547B51DA2B98AA8900DF92CA /* README.md */,
+				547B51DB2B98AB5F00DF92CA /* .gitignore */,
 				547B51CB2B98A99200DF92CA /* swift+CameraCapture+Inference */,
 				547B51CA2B98A99200DF92CA /* Products */,
 			);
@@ -53,6 +61,8 @@
 		547B51CB2B98A99200DF92CA /* swift+CameraCapture+Inference */ = {
 			isa = PBXGroup;
 			children = (
+				547B51DD2B98AB7D00DF92CA /* Inference */,
+				547B51DC2B98AB7300DF92CA /* Camera */,
 				547B51CC2B98A99200DF92CA /* swift_CameraCapture_InferenceApp.swift */,
 				547B51CE2B98A99200DF92CA /* ContentView.swift */,
 				547B51D02B98A99300DF92CA /* Assets.xcassets */,
@@ -67,6 +77,47 @@
 				547B51D32B98A99300DF92CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		547B51DC2B98AB7300DF92CA /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				547B51E42B98ABF300DF92CA /* Models */,
+				547B51E32B98ABE700DF92CA /* ViewModels */,
+				547B51E22B98ABDF00DF92CA /* Views */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		547B51DD2B98AB7D00DF92CA /* Inference */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Inference;
+			sourceTree = "<group>";
+		};
+		547B51E22B98ABDF00DF92CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				547B51E02B98ABC500DF92CA /* FrameView.swift */,
+				547B51E52B98AC9F00DF92CA /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		547B51E32B98ABE700DF92CA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				547B51DE2B98ABB800DF92CA /* FrameHandler.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		547B51E42B98ABF300DF92CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547B51E12B98ABC500DF92CA /* FrameView.swift in Sources */,
 				547B51CF2B98A99200DF92CA /* ContentView.swift in Sources */,
 				547B51CD2B98A99200DF92CA /* swift_CameraCapture_InferenceApp.swift in Sources */,
+				547B51E62B98AC9F00DF92CA /* CameraView.swift in Sources */,
+				547B51DF2B98ABB800DF92CA /* FrameHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +331,7 @@
 				DEVELOPMENT_TEAM = L228K2QMTF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos and videos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,6 +361,7 @@
 				DEVELOPMENT_TEAM = L228K2QMTF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to capture photos and videos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
